@@ -12,12 +12,10 @@ var (
 
 	Words = map[byte][]string{
 		'M': {
-			"канал", "слайс", "интерфейс", "for-range", "поинтер", "стрин билдер", "тип", "метод",
-			"select{}", "гофер", "импорт",
+			"канал", "слайс", "интерфейс",
 		},
 		'F': {
-			"горутина", "мапа", "паника", "iota", "функция",
-			"аллокация", "руна", "структура",
+			"горутина", "мапа", "паника",
 		},
 	}
 
@@ -26,7 +24,6 @@ var (
 	Special3 = "Я смотрю Гошу Дударя..."
 	Special4 = "Я смотрю Хауди Хо..."
 	Special5 = "Так, коллеги. Сейчас начну банить."
-	Special6 = "У меня err == nil"
 )
 
 func GoSize() string {
@@ -43,8 +40,6 @@ func GoSize() string {
 		return Special4
 	case 96:
 		return Special5
-	case 95:
-		return Special6
 	}
 
 	var result string
